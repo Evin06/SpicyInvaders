@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Storage\\Storage.csproj": {}
+    "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Storage\\Storage.csproj": {}
   },
   "projects": {
-    "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Model\\Model.csproj": {
+    "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\eviparamana\\.nuget\\packages\\",
-        "outputPath": "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Model\\obj\\",
+        "outputPath": "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,14 +61,14 @@
         }
       }
     },
-    "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Storage\\Storage.csproj": {
+    "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Storage\\Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Storage\\Storage.csproj",
+        "projectUniqueName": "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Storage\\Storage.csproj",
         "projectName": "Storage",
-        "projectPath": "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Storage\\Storage.csproj",
+        "projectPath": "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Storage\\Storage.csproj",
         "packagesPath": "C:\\Users\\eviparamana\\.nuget\\packages\\",
-        "outputPath": "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Storage\\obj\\",
+        "outputPath": "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Storage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +88,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Model\\Model.csproj": {
-                "projectPath": "D:\\Projet_2èmeAnnée\\SpaceInvaders\\C#_SpaceInvaders\\Model\\Model.csproj"
+              "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\eviparamana\\Documents\\GitHub\\SpicyInvaders\\C#_SpaceInvader\\Model\\Model.csproj"
               }
             }
           }

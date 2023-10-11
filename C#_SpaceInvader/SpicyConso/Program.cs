@@ -53,7 +53,7 @@ while (true)
     joueur.Draw();
 
     // Autosave
-    if (frameNumber % 1000 == 0)
+    if (frameNumber % 1000 == 1)
     {
         Store.StoreAlien(alain);
     }
