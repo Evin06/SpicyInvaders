@@ -59,5 +59,5 @@ while (true)
     }
 
     // Timing
-    Thread.Sleep(100);
+    Thread.Sleep(5);
 }
