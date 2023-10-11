@@ -33,7 +33,7 @@ while (true)
     }
 
     //limite le nombre d'alien crée 
-    if (Alienlist.Count < 80)
+    if (Alienlist.Count < 10)
     {
         Alien al = new Alien();
         Alienlist.Add(al);
@@ -53,7 +53,7 @@ while (true)
     joueur.Draw();
 
     // Autosave
-    if (frameNumber % 1000 == 1)
+    if (frameNumber % 1000 == 0)
     {
         Store.StoreAlien(alain);
     }
