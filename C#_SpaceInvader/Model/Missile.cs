@@ -8,9 +8,9 @@ namespace Model
 {
     public class Missile
     {
-        private string[] view =
-     {
-            @"|",
-        };
+        //Position x du missile
+        public int x;
+        //Position y du missile
+        public int y;
     }
 }

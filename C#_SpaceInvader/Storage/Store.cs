@@ -10,9 +10,9 @@ namespace Storage
 {
     public class Store
     {
-        public static void StoreAlien (Alien alain)
+        public static void StoreAlien (Alien al)
         {
-            Debug.WriteLine("C'est dans la db que je mets "+alain.ToString ());
+            Debug.WriteLine("C'est dans la db que je mets "+al.ToString ());
         }
     }
 }

@@ -9,6 +9,11 @@ namespace Model
 
     public class Canon
     {
+        public int x = 63;
+        public int y = 41;
+        public bool move = true;
+        new List<Missile> missiles = new List<Missile>();
+
         private string[] view =
       {
             @"       |       ",
@@ -16,18 +21,14 @@ namespace Model
             @"     / _ \     ",
             @"  | | ( ) | |  ",
             @"  |-|     |-|  ",
-            @"    |  _  |    ",
-            @"|__/  | |  \__|  ",
+            @"   /  | |  \  ",
             @"  /   |_|   \  ",
             @" |___________| ",
-            @"   |_|_|_|_|  ",
-            @"    WWWWWWW ",
         };
 
 
-        public int x = 65;
-        public int y = 35;
-        public bool move = true;
+
+        //affichage du canon
         public void Draw()
         {
 
@@ -41,6 +42,7 @@ namespace Model
         {
 
         }
+        //movement a droite
         public void MoveRight()
         {
             if (x == (Console.WindowWidth - 15))
@@ -53,6 +55,7 @@ namespace Model
             }
 
         }
+        //movement a gauche
         public void MoveLeft()
         {
             if (x == 0)
@@ -64,5 +67,6 @@ namespace Model
                 x--;
             }
         }
+
     }
 }

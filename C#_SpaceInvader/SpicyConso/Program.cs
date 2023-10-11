@@ -12,12 +12,6 @@ List<Alien> Alienlist = new List<Alien>();
 Canon joueur = new Canon();
 Playground.Init();
 
-for(int i = 0;i < 10 ; i++) 
-{
-    Alien al = new Alien();
-    Alienlist.Add(al);
-}
-
 while (true)
 {
     // Actions de l'utilisateur
@@ -38,12 +32,22 @@ while (true)
         }
     }
 
-    // Déplacement au niveau du modèle (état)
-    alain.Move();
+    //limite le nombre d'alien crée 
+    if (Alienlist.Count < 10)
+    {
+        Alien al = new Alien();
+        Alienlist.Add(al);
+    }
 
-    // Affichage
+    // Déplacement au niveau du modèle (état)
+
     Playground.Clear();
-    alain.Draw();
+    // Affichage
+    foreach (Alien al in Alienlist)
+    {
+        al.Draw();
+        al.Move();
+    }
     frameNumber++;
 
     joueur.Draw();
@@ -55,5 +59,5 @@ while (true)
     }
 
     // Timing
-    Thread.Sleep(3);
+    Thread.Sleep(100);
 }

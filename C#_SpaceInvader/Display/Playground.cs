@@ -4,6 +4,7 @@ namespace Display
 {
     public class Playground
     {
+        //enlever le curseur
         public static void Init()
         {
             Console.CursorVisible = false;
@@ -12,6 +13,7 @@ namespace Display
         {
             Console.Clear();
         }
+        // taille de l'écran
        public const int SHEIGHT = 50;
        public const int SWIDTH = 150;
     }
