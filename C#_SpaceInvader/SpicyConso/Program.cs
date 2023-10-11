@@ -33,7 +33,7 @@ while (true)
     }
 
     //limite le nombre d'alien crée 
-    if (Alienlist.Count < 19)
+    if (Alienlist.Count < 9)
     {
         Alien al = new Alien();
         Alienlist.Add(al);
