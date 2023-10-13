@@ -8,26 +8,26 @@ namespace Model
 {
     public class Alien
     {
-        private string[] view =
+        private string[] ALIEN =
     {
-            @"   ▄ ▀▄  ▄▀ ▄    ",
-            @"   █▄██████▄█    ",
-            @"   ███▄██▄███    ",
-            @"   ▀████████▀    ",
-            @"    ▄▀    ▀▄     ",
+            @"  ▄ ▀▄ ▄▀ ▄   ",
+            @"  █▄█████▄█   ",
+            @"  ███▄█▄███   ",
+            @"  ▀███████▀   ",
+            @"   ▄▀   ▀▄    ",
         };
 
 
         public int x;
-        public int y;
+        public int y = 2;
         public bool movingRight = true;
         public void Draw()
         {
             //Affichage de l'alien
-            for (int i = 0; i < view.Length; i++)
+            for (int i = 0; i < ALIEN.Length; i++)
             {
                 Console.SetCursorPosition(x, y + i);
-                Console.WriteLine(view[i]);
+                Console.WriteLine(ALIEN[i]);
             }
         }
         public void Move()
@@ -36,17 +36,18 @@ namespace Model
             // Movement de l'alien de gauche a droite 
             if (movingRight)
             {
-                x += 15;
+                x += 12;
                 //Si l'alien est au niveau de l'écran il descent 
-                if (x == Console.WindowWidth - 15)
+                if (x == Console.WindowWidth - 18)
                 {
                     this.y += 5;
                     movingRight = false;
                 }
 
             }
+            else //Movement de l'alien de droite a gauche
             {
-                x -= 15;
+                x -= 11;
                 if (x <= 3)
                 {
                     this.y += 5;
