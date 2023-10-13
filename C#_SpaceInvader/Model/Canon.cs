@@ -22,8 +22,8 @@ namespace Model
             @"  | | ( ) | |  ",
             @"  |-|     |-|  ",
             @"   /  | |  \  ",
-            @"  /   |_|   \  ",
-            @" |___________| ",
+            @"  /  /|_|\  \  ",
+            @" |__/ www \__| ",
         };
 
 
@@ -51,20 +51,20 @@ namespace Model
             }
             else
             {
-                x++;
+                x+=2;
             }
 
         }
         //movement a gauche
         public void MoveLeft()
         {
-            if (x == 0)
+            if (x == 1)
             {
-                x = 0;
+                x =1;
             }
             else
             {
-                x--;
+                x-=2;
             }
         }
 
