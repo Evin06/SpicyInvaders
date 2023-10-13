@@ -12,9 +12,9 @@ namespace Model
         public int x = 63;
         public int y = 41;
         public bool move = true;
-        new List<Missile> missiles = new List<Missile>();
+        new List<MissileCanon> missiles = new List<MissileCanon>();
 
-        private string[] view =
+        private string[] CANON =
       {
             @"       |       ",
             @"      / \      ",
@@ -22,8 +22,8 @@ namespace Model
             @"  | | ( ) | |  ",
             @"  |-|     |-|  ",
             @"   /  | |  \  ",
-            @"  /  /|_|\  \  ",
-            @" |__/ www \__| ",
+            @"  |__/|_|\__|  ",
+            @"   WW www WW  ",
         };
 
 
@@ -32,10 +32,10 @@ namespace Model
         public void Draw()
         {
 
-            for (int i = 0; i < view.Length; i++)
+            for (int i = 0; i < CANON.Length; i++)
             {
                 Console.SetCursorPosition(x, y + i);
-                Console.WriteLine(view[i]);
+                Console.WriteLine(CANON[i]);
             }
         }
         public void Move()
@@ -51,7 +51,7 @@ namespace Model
             }
             else
             {
-                x+=2;
+                x += 2;
             }
 
         }
@@ -60,13 +60,24 @@ namespace Model
         {
             if (x == 1)
             {
-                x =1;
+                x = 1;
             }
             else
             {
-                x-=2;
+                x -= 2;
             }
         }
-
+        public void chargement(MissileCanon missileDefault)
+        {
+            this.missiles.Add(missileDefault);
+        }
+        public Missile dropMissile()
+        {
+            MissileCanon Missiledrop = this.missiles.First();
+            Missiledrop.x = x;
+            Missiledrop.y = y;
+            Missiledrop.missileIsLaunched = true;
+            return Missiledrop;
+        }
     }
 }

@@ -12,5 +12,22 @@ namespace Model
         public int x;
         //Position y du missile
         public int y;
+        
+        public bool missileIsLaunched = false;
+        //Dégat du missile
+        public int damage;
+        public static string MISSILE = @"  |  ";
+    
+           public static void DrawMissileJoueur(MissileCanon missile, Alien alien)
+        {
+            if (missile.missileIsLaunched)
+            {
+                if (MISSILE == null) return;
+                 Console.SetCursorPosition(missile.x + 5, missile.y );
+                Console.WriteLine(MISSILE);
+            }
+
+
+        }
     }
 }

@@ -11,10 +11,11 @@ namespace Display
         }
         public static void Clear()
         {
-            Console.Clear();
+             Console.Clear();
         }
         // taille de l'écran
-       public const int SHEIGHT = 50;
-       public const int SWIDTH = 150;
+        public const int SHEIGHT = 50;
+        public const int SWIDTH = 150;
+
     }
 }
