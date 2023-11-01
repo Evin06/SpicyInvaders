@@ -12,7 +12,7 @@ namespace Model
         public int x = 63;
         public int y = 41;
         public bool move = true;
-        new List<Missile> missiles = new List<Missile>();
+        new List<Missile> missileS = new List<Missile>();
 
         private string[] view =
       {
@@ -58,15 +58,28 @@ namespace Model
         //movement a gauche
         public void MoveLeft()
         {
-            if (x == 1)
+            if (x == 0)
             {
-                x =1;
+                x = 0;
             }
             else
             {
                 x-=2;
             }
         }
+        public Missile dropMissile()
+        {
+            Missile Missiledrop = this.missileS.First();
+            missileS.Remove(Missiledrop);
+            Missiledrop.x = x;
+            Missiledrop.y = y;
+            Missiledrop.missileIsLaunched = true;
+            return Missiledrop;
+        }
 
+        public void chargement(Missile missileDefault)
+        {
+            this.missileS.Add(missileDefault);
+        }
     }
 }

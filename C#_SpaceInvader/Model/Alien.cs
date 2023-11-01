@@ -9,7 +9,7 @@ namespace Model
     public class Alien
     {
         private string[] view =
-    {
+      {
             @"   ▄ ▀▄  ▄▀ ▄    ",
             @"   █▄██████▄█    ",
             @"   ███▄██▄███    ",
@@ -45,15 +45,17 @@ namespace Model
                 }
 
             }
+            else //Movement de l'alien de droite a gauche
             {
                 x -= 15;
-                if (x <= 3)
+                if (x <= 0)
                 {
                     this.y += 5;
                     movingRight = true;
                 }
 
             }
+          
         }
     }
 }
