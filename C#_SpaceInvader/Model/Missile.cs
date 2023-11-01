@@ -23,7 +23,7 @@ namespace Model
             if (missile.missileIsLaunched)
             {
                 if (MISSILE == null) return;
-                 Console.SetCursorPosition(missile.x + 5, missile.y );
+                 Console.SetCursorPosition(missile.x + 5, missile.y-1);
                 Console.WriteLine(MISSILE);
             }
 

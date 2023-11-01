@@ -17,9 +17,9 @@ namespace Model
             if (missileIsLaunched)
             {
 
-                this.y-=2 ;
+                this.y-=4 ;
 
-                if (this.y == 3)// Quand il dépasse la bordure il s'enlève
+                if (this.y == 1)// Quand il dépasse la bordure il s'enlève
                 {
                     missileIsLaunched = false;
                 }
