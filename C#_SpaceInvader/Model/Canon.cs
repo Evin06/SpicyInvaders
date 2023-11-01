@@ -9,6 +9,7 @@ namespace Model
 
     public class Canon
     {
+
         public int x = 63;
         public int y = 41;
         public bool move = true;
@@ -28,7 +29,9 @@ namespace Model
 
 
 
-        //affichage du canon
+        /// <summary>
+        /// permet d'afficher le canon 
+        /// </summary>
         public void Draw()
         {
 
@@ -38,11 +41,10 @@ namespace Model
                 Console.WriteLine(view[i]);
             }
         }
-        public void Move()
-        {
 
-        }
-        //movement a droite
+        /// <summary>
+        /// permet de deplacer le canon a droite 
+        /// </summary>
         public void MoveRight()
         {
             if (x == (Console.WindowWidth - 15))
@@ -51,30 +53,36 @@ namespace Model
             }
             else
             {
-                x+=2;
+                x += 2;
             }
 
         }
-        //movement a gauche
+        /// <summary>
+        /// Permet de deplacer le canon à gauche 
+        /// </summary>
         public void MoveLeft()
         {
-            if (x == 0)
+            if (x == 1)
             {
-                x = 0;
+                x = 1;
             }
             else
             {
-                x-=2;
+                x -= 2;
             }
         }
-        public Missile dropMissile()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public Missile shotMissile()
         {
-            Missile Missiledrop = this.missileS.First();
-            missileS.Remove(Missiledrop);
-            Missiledrop.x = x;
-            Missiledrop.y = y;
-            Missiledrop.missileIsLaunched = true;
-            return Missiledrop;
+            Missile Missileshot = this.missileS.First();
+            missileS.Remove(Missileshot);
+            Missileshot.x = x;
+            Missileshot.y = y;
+            Missileshot.missileIsLaunched = true;
+            return Missileshot;
         }
 
         public void chargement(Missile missileDefault)

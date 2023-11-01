@@ -21,6 +21,10 @@ namespace Model
         public int x;
         public int y;
         public bool movingRight = true;
+
+        /// <summary>
+        /// permet d'afficher l'alien 
+        /// </summary>
         public void Draw()
         {
             //Affichage de l'alien
@@ -30,6 +34,9 @@ namespace Model
                 Console.WriteLine(view[i]);
             }
         }
+        /// <summary>
+        /// permet de deplaer l'alien de faire des zig zag 
+        /// </summary>
         public void Move()
         {
             // Movement de l'alien de gauche a droite 
@@ -45,6 +52,7 @@ namespace Model
                 }
 
             }
+
             else //Movement de l'alien de droite a gauche
             {
                 x -= 15;
@@ -53,9 +61,8 @@ namespace Model
                     this.y += 5;
                     movingRight = true;
                 }
-
             }
-          
+
         }
     }
 }

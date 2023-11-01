@@ -1,10 +1,10 @@
-﻿using Model; 
-using Display;  
-using System.Numerics;  
-using Storage;  
-using System;  
-using System.Collections.Generic;  
-using System.Threading;  
+﻿using Model;
+using Display;
+using System.Numerics;
+using Storage;
+using System;
+using System.Collections.Generic;
+using System.Threading;
 
 
 Console.WindowHeight = Playground.SHEIGHT;  // Définit la hauteur de la fenêtre de la console
@@ -44,7 +44,7 @@ while (true)
 
 static void Game()
 {
-   
+
 
     uint frameNumber = 0;  // Compteur du nombre de trames affichées
     Alien alain = new Alien();  // Crée une instance d'un Alien
@@ -73,8 +73,8 @@ static void Game()
                     {
                         MissileCanon missileJoueurs = new MissileCanon(100);  // Crée un missile de base
                         missileJoueur.Add(missileJoueurs);  // Ajoute le missile à la liste
-                        joueur.chargement(missileJoueurs );  // Charge le missile dans le canon du joueur
-                        joueur.dropMissile();  // Lance le missile
+                        joueur.chargement(missileJoueurs);  // Charge le missile dans le canon du joueur
+                        joueur.shotMissile();  // Lance le missile
                     }
                     break;
             }
@@ -102,6 +102,7 @@ static void Game()
         joueur.Draw();  // Affiche le canon du joueur
 
         // Affichage des missiles du joueur
+
         foreach (Alien invader in Alienlist)
         {
             foreach (MissileCanon missileDefault in missileJoueur)
@@ -110,7 +111,7 @@ static void Game()
             }
         }
 
-        // Boucle pour mettre à jour la position des missiles
+        // Boucle pour mettre à jour la position des missiles 
         for (int i = missileJoueur.Count - 1; i >= 0; i--)
         {
             MissileCanon missileD = missileJoueur[i];
@@ -118,7 +119,7 @@ static void Game()
             if (frameNumber % 1 == 0)  // Vitesse du missile (1 indique la fréquence de mise à jour)
             {
                 missileD.UpdateMisille();  // Met à jour la position du missile
-               
+
             }
         }
 
