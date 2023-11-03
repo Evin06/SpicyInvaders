@@ -6,11 +6,11 @@ namespace SpaceInvaders
     internal class Database
     {
         public MySqlConnection connection;
-        private string _serverName = "localhost"; //adresse du serveur
-        private string _serverUid = "root"; //identifiant de connexion
-        private string _serverPwd = "root"; //mot de passe de connexion
+        private string _serverNom = "localhost"; //adresse du serveur
+        private string _serverId = "root"; //identifiant de connexion
+        private string _serverMP = "root"; //mot de passe de connexion
         private string _serverPort = "6033"; //port du serveur
-        private string _databaseName = "db_space_invaders"; //nom de la base de données
+        private string _dbName = "db_space_invaders"; //nom de la base de données
 
 
         List<string> listTabPlayer = new List<string>();
@@ -32,8 +32,8 @@ namespace SpaceInvaders
             string myConnectionString;
 
             //requête de connexion à la base de donnée avec le paquet MySql.Data
-            myConnectionString = $"server={this._serverName}; uid={this._serverUid}; " +
-                $"pwd={this._serverPwd}; database={this._databaseName}; port={this._serverPort};";
+            myConnectionString = $"server={this._serverNom}; uid={this._serverId}; " +
+                $"pwd={this._serverMP}; database={this._dbName}; port={this._serverPort};";
 
             connection = new MySqlConnection(myConnectionString);
 

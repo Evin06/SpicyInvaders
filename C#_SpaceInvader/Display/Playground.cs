@@ -9,6 +9,10 @@ namespace Display
         {
             Console.CursorVisible = false;
         }
+
+        /// <summary>
+        /// super ce qui ce trouve sur l'écran 
+        /// </summary>
         public static void Clear()
         {
             Console.Clear();

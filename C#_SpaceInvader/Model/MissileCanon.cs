@@ -12,6 +12,9 @@ namespace Model
         {
             this.damage = damage;
         }
+        /// <summary>
+        /// ca permet de deplacer le missile 
+        /// </summary>
         public void UpdateMisille()
         {
             if (missileIsLaunched)

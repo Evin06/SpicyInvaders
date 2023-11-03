@@ -28,6 +28,8 @@ while (true)
     Menu.DrawQuitter();
 
     ConsoleKeyInfo keyPressed = Console.ReadKey(true);
+
+    //permet de choisir quel page on veut aller depuis le menu 
     switch (keyPressed.Key)
     {
         case ConsoleKey.NumPad1:
@@ -116,13 +118,12 @@ static void Game()
         {
             MissileCanon missileD = missileJoueur[i];
 
-            if (frameNumber % 1 == 0)  // Vitesse du missile (1 indique la fréquence de mise à jour)
+            if (frameNumber % 1 == 0)  // Vitesse du missile (1 indique la fréquence de m   ise à jour)
             {
                 missileD.UpdateMisille();  // Met à jour la position du missile
 
             }
         }
-
 
 
         // Autosave

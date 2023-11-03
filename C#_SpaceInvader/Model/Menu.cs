@@ -4,18 +4,30 @@
     {
         public static int SousMenu = 2;
 
+        /// <summary>
+        /// Titre du jeu 
+        /// </summary>
         public static string[] TITRE =
         {
             "Space invader"
         };
+        /// <summary>
+        /// sous titre Jouer 
+        /// </summary>
         public static string[] JOUER =
         {
             " 1.jouer"
         };
+        /// <summary>
+        /// sous titre Score 
+        /// </summary>
         public static string[] SCORE =
         {
             " 2.Score "
         };
+        /// <summary>
+        /// sous titre quitter 
+        /// </summary>
         public static string[] QUITTER =
         {
             " 3.Quitter "
@@ -38,7 +50,7 @@
         }
 
         /// <summary>
-        /// Ca affiche le l'onglet jouer en dessous du titre 
+        /// Ca affiche le sous titre jouer en dessous du titre 
         /// </summary>
         public static void DrawJouer()
         {
@@ -53,7 +65,7 @@
         }
 
         /// <summary>
-        /// Ca affche l'onglet score en dessous de Jouer 
+        /// Ca affche le sous titre score  en dessous de Jouer 
         /// </summary>
         public static void DrawScore()
         {

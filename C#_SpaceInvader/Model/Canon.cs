@@ -10,12 +10,12 @@ namespace Model
     public class Canon
     {
 
-        public int x = 63;
-        public int y = 41;
-        public bool move = true;
+        public int x = 63;//position x du canon
+        public int y = 41;//position y du canon 
+        public bool move = true;//variable qui permet de dire si il part a droite ou a gauche
         new List<Missile> missileS = new List<Missile>();
 
-        private string[] view =
+        private string[] CANON =
       {
             @"       |       ",
             @"      / \      ",
@@ -35,10 +35,10 @@ namespace Model
         public void Draw()
         {
 
-            for (int i = 0; i < view.Length; i++)
+            for (int i = 0; i < CANON.Length; i++)
             {
                 Console.SetCursorPosition(x, y + i);
-                Console.WriteLine(view[i]);
+                Console.WriteLine(CANON[i]);
             }
         }
 
@@ -47,7 +47,8 @@ namespace Model
         /// </summary>
         public void MoveRight()
         {
-            if (x == (Console.WindowWidth - 15))
+
+            if (x == (Console.WindowWidth - 15))//si ca atteint le bord ca continue pas 
             {
                 x = Console.WindowWidth - 15;
             }
@@ -62,7 +63,7 @@ namespace Model
         /// </summary>
         public void MoveLeft()
         {
-            if (x == 1)
+            if (x == 1)//si ca atteint le bord ca continue pas 
             {
                 x = 1;
             }
@@ -72,7 +73,7 @@ namespace Model
             }
         }
         /// <summary>
-        /// 
+        /// permet de tier les missiles 
         /// </summary>
         /// <returns></returns>
         public Missile shotMissile()
